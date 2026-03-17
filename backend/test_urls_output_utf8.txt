@@ -1,0 +1,21 @@
+Model Loaded: True
+
+Testing URL: http://192.168.1.1/ebay-login
+Classification: Fake (Score: 100)
+Factors: ['No HTTPS — connection is not encrypted', 'Invalid or missing SSL certificate', 'IP address used instead of domain name', 'Suspicious keywords detected: login, ebay', 'Uncommon or suspicious top-level domain (TLD)']
+
+Testing URL: http://secure-paypal-verify.xyz/account
+Classification: Suspicious (Score: 65)
+Factors: ['No HTTPS — connection is not encrypted', 'Invalid or missing SSL certificate', 'Hyphen in domain name — often used in spoofing', 'Suspicious keywords detected: verify, secure, account', 'Uncommon or suspicious top-level domain (TLD)']
+
+Testing URL: http://amazon.com.fake.site/login
+Classification: Suspicious (Score: 65)
+Factors: ['No HTTPS — connection is not encrypted', 'Invalid or missing SSL certificate', 'Suspicious keywords detected: login, amazon', 'Uncommon or suspicious top-level domain (TLD)']
+
+Testing URL: https://www.amazon.com
+Classification: Safe (Score: 0)
+Factors: ['Suspicious keywords detected: amazon']
+
+Testing URL: http://myfake-amazon.com/login
+Classification: Suspicious (Score: 45)
+Factors: ['No HTTPS — connection is not encrypted', 'Invalid or missing SSL certificate', 'Hyphen in domain name — often used in spoofing', 'Suspicious keywords detected: login, amazon']

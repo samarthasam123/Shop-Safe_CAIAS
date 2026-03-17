@@ -1,0 +1,124 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--cls-color, var(--border));
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 0 40px var(--cls-glow, transparent);
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--cls-dim);
+  border-bottom: 1px solid var(--cls-color, var(--border));
+}
+
+.iconWrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--cls-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: var(--cls-color);
+  background: var(--cls-dim);
+}
+
+.bannerText {
+  flex: 1;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--cls-color);
+}
+
+.message {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Body */
+.body {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  align-items: center;
+}
+
+/* Gauge */
+.gauge {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.gaugeSvg {
+  width: 140px;
+  height: 140px;
+}
+
+.gaugeScale {
+  display: flex;
+  gap: 16px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+/* Stats */
+.stats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.statLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.statValue {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+@media (max-width: 600px) {
+  .body { flex-direction: column; }
+  .gauge { width: 100%; }
+  .gaugeSvg { width: 120px; height: 120px; }
+}
