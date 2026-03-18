@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
-
+/* All styles are in App.jsx inline — this file intentionally minimal */
 *,
 *::before,
 *::after {
@@ -8,60 +7,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: #07090f;
-  color: #dde3f0;
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
-#root {
-  position: relative;
-  z-index: 1;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0d1117;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #1e2d3d;
-  border-radius: 3px;
-}
-
-:root {
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --bg-secondary: rgba(255, 255, 255, 0.02);
-  --bg-card-hover: rgba(255, 255, 255, 0.05);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-bright: rgba(255, 255, 255, 0.15);
-  --text-primary: #eef2ff;
-  --text-secondary: rgba(221, 227, 240, 0.6);
-  --text-muted: rgba(221, 227, 240, 0.3);
-  --accent-cyan: #00e5a0;
-  --accent-cyan-dim: rgba(0, 229, 160, 0.1);
-  --accent-cyan-glow: rgba(0, 229, 160, 0.25);
-  --safe: #00e5a0;
-  --safe-dim: rgba(0, 229, 160, 0.1);
-  --safe-glow: rgba(0, 229, 160, 0.25);
-  --warn: #ffc94d;
-  --warn-dim: rgba(255, 201, 77, 0.1);
-  --warn-glow: rgba(255, 201, 77, 0.2);
-  --danger: #ff4d6d;
-  --danger-dim: rgba(255, 77, 109, 0.1);
-  --danger-glow: rgba(255, 77, 109, 0.25);
-  --font-mono: 'Space Mono', monospace;
-  --font-display: 'Outfit', sans-serif;
-  --radius: 12px;
-  --radius-sm: 6px;
-  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
